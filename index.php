@@ -85,6 +85,7 @@
             },
             hobby: {
                 required: true,
+                valueNotEquals: "Ninguno"
             },
             tiempo: {
                 required: true,
@@ -100,6 +101,7 @@
             genero: "El campo es obligatorio.",
             hobby: {
                 required: "El campo es obligatorio.",
+                valueNotEquals: "Seleccione un hobby."
             },
             tiempo: {
                 required: "El campo es obligatorio.",
