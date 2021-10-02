@@ -50,7 +50,7 @@
         </div>
         <div id="preguntaOculta" class="row">
             <div class="col-25">
-                <label for="tiempo">Tiempo</label>
+                <label for="tiempo">¿Cuánto tiempo le dedicas al mes?</label>
             </div>
             <div class="col-75">
                 <input type="number" name="tiempo" autocomplete="off" min="0" value="0" placeholder="Ingrese el tiempo dedicado">
