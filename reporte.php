@@ -15,18 +15,6 @@ $tabla = mysqli_query($conn, "SELECT Nombre,Genero,Hobby,Tiempo,COUNT(*) as Cant
 
 <?php include('./includes/header.php') ?>
 
-<?php
-
-// echo json_encode($preguntas);
-
-// foreach($preguntas as $pregunta){
-//     // echo $pregunta['hobby'];
-
-//     echo "<br>";
-// }
-
-?>
-
 <div style="position: relative; height:20%; width:40%; margin: 1em auto 2em;">
     <h3>Pregunta 1: nombre</h3>
     <canvas id="nombres" height="10vh" width="20vw"></canvas>
@@ -215,7 +203,7 @@ $tabla = mysqli_query($conn, "SELECT Nombre,Genero,Hobby,Tiempo,COUNT(*) as Cant
 <script type="text/javascript">
     var tableToExcel = (function() {
         var uri = 'data:application/vnd.ms-excel;base64,',
-            template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>',
+            template = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}<\/table><\/body><\/html>`,
             base64 = function(s) {
                 return window.btoa(unescape(encodeURIComponent(s)))
             },

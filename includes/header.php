@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/styles.css">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="./assets/jquery.validate.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="assets/chart.min.js"></script>
 </head>
 <body>
 
